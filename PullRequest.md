@@ -4,4 +4,4 @@ Item 1 Item 2 Purpose Describe the problem or feature.
 
 Approach How does this change address the problem?
 
-Learning Describe the research stage Links to blog posts, patterns, libraries or addons used to solve this problem If this closes an issue, reference the issue here. Also add additional commentsIf it doesn't, remove this line Closes #000
+Learning Describe the research stage Links to blog posts, patterns, libraries or addons used to solve this problem If this closes an issue, reference the issue here. Also add additional comments If it doesn't, remove this line Closes #000
