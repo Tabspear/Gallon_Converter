@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 
-/* @layer components {
-    .bg_primary {
-
+@layer components {
+    html {
+        font-family: 'Merriweather', serif;
     }
-} */
+}
