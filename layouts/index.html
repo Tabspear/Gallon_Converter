@@ -53,7 +53,7 @@
                     </a>
                 </div>
         </div>
-        <aside id="main_sideBar" class="w-60 mt-5 absolute shadow-md bg-black" aria-label="Sidebar">
+        <aside id="main_sideBar" class="w-60 mt-5 absolute top-2.6 shadow-md bg-black hidden" aria-label="Sidebar">
             <div class="flex flex-col justify-between p-8 mx-auto">
                 <div>
                  
@@ -80,6 +80,55 @@
     
         </aside>
     </nav>
+       <!-- THE COVERTER -->
+    <section class=" border border-tahiti shadow-midnight">
+        <div class="flex items-center justify-center text-4xl">
+            <div class="mr-7">Basic Conversion</div>
+        </div>
+        <div class="flex items-center justify-center p-3">
+            <div class="mr-3">
+                <input type="number" id="input_info" class="bg-black border border-red text-white  focus:ring-2 focus:ring-offset-2">
+            </div>
+          <div>
+                <!-- This example requires Tailwind CSS v2.0+ -->
+<div class="relative inline-block text-left">
+    <div>
+      <button type="button" class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-black text-sm font-medium text-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500" id="menu-button">
+        Units
+      </button>
+    </div>
+    <!--
+      Dropdown menu, show/hide based on menu state.
+  
+      Entering: "transition ease-out duration-100"
+        From: "transform opacity-0 scale-95"
+        To: "transform opacity-100 scale-100"
+      Leaving: "transition ease-in duration-75"
+        From: "transform opacity-100 scale-100"
+        To: "transform opacity-0 scale-95"
+    -->
+    <div class="hidden origin-top-right absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1" id="dropdownId">
+      <div class="py-1" role="none">
+        <a href="#" class="text-black hover:text-red block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Gallon-Litres</a>
+        <a href="#" class="text-black hover:text-red block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Litres-Gallon</a>
+      </div>
+      <div class="py-1" role="none">
+        <a href="#" class="text-black hover:text-red block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Kilometres-Metres</a>
+        <a href="#" class="text-gray-700 hover:text-red block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-3">Metres-Kilometres</a>
+      </div>
+      <div class="py-1" role="none">
+        <a href="#" class="text-black hover:text-red block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-4">Celcius-Faraheint</a>
+        <a href="#" class="text-black hover:text-red block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-5">Faraheint-Celcius</a>
+      </div>
+    </div>
+  </div>
+       
+    </section>
+    <section class="w-90 bg-tahiti h-40 border border-y-8 mx-auto text-black text-center" id="output">
+
+    </section>
+
+    <!-- Page Footer -->
 
     <footer class="p-4 bg-black fixed bottom-0 w-screen">
         <div class="flex flex-col items-center">
