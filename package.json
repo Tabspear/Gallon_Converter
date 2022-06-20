@@ -4,8 +4,9 @@
   "description": "This app converts gallons to litres and litres to gallons",
   "main": "index.js",
   "scripts": {
+    "start": "npm run prod && node index",
     "dev": "npx tailwindcss -i ./tailwind.css -o ./dist/output.css --watch",
-    "prod": "npx tailwindcss -i ./tailwind.css -o ./dist/output.css --minify"
+    "prod": "postcss layouts/styles/tailwind.css -o layouts/styles/style.css --minify"
   },
   "repository": {
     "type": "git",
@@ -18,14 +19,13 @@
     "url": "https://github.com/Tabspear/Gallon_Converter/issues"
   },
   "homepage": "https://github.com/Tabspear/Gallon_Converter#readme",
-  "devDependencies": {
-    "tailwindcss": "^3.0.24"
-  },
   "dependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/forms": "^0.5.2",
     "@tailwindcss/line-clamp": "^0.4.0",
     "@tailwindcss/typography": "^0.5.2",
-    "express": "^4.18.1"
+    "autoprefixer": "^10.4.7",
+    "express": "^4.18.1",
+    "tailwindcss": "^3.0.24"
   }
 }
